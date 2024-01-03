@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Pacifico:regular);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #ffefcd;
+  color: #555;
+}
+.container {
+  height: 100vh;
+  padding: 9.6rem 0;
+}
+
+.menu_sub {
+  font-size: 3.4rem;
+  font-weight: 700;
+  font-family: "Pacifico", sans-serif;
+  color: #e69d04;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.menu_main_Heading {
+  font-size: 5.2rem;
+  text-align: center;
+}
+.receipe_cards_container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 9.6rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+.receipe_card {
+  background-color: #fff7e6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.receipe_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.card_mini_overlay {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: -3rem;
+}
+.card_mini_overlay .mini_card {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  text-align: center;
+  border-radius: 11px;
+}
+
+.card_mini_overlay .mini_card p:first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.card_mini_overlay .mini_card p:last-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffae04;
+}
+.receipe_card_img {
+  height: 28rem;
+}
+.receipe_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card_content {
+  padding: 2.4rem 2.4rem;
+}
+.card_content .card_heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card_content_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card_content_info li {
+  font-size: 1.8rem;
+}
+
+.card_btn {
+  text-align: center;
+}
+.view_receipeBtn {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin: 2.4rem 0;
+  background-color: #ffae04;
+  font-size: 1.8rem;
+  border-radius: 4px;
+  color: #555;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.view_receipeBtn:hover {
+  background-color: #e69d04;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 48.4%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 48.4%;
+  }
+  .container {
+    height: 100vh;
+    padding: 4.8rem 0;
+  }
+  .receipe_cards_container {
+    grid-template-columns: 1fr;
+
+    padding: 6.4rem 1rem;
+  }
+}
