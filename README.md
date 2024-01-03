@@ -8,5 +8,4 @@ Fully Responsive card.
 2. Tablet
 ![](responsiveImg/tablet.png)
 
-2. Desktop
-![](responsiveImg/tablet.png)
+
